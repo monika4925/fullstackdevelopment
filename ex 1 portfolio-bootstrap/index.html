@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monika B | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f7fb;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: white;
+      padding: 100px 20px;
+    }
+    .section-title {
+      color: #1d2671;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .carousel img {
+      height: 350px;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Monika B</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certification">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 🔹 HERO SECTION -->
+<section class="hero text-center mt-5">
+  <div class="container">
+    <img src="monika.jpeg" class="rounded-circle mb-3" width="150">
+    <h1 class="fw-bold">Monika B</h1>
+    <p class="lead">Computer Science Engineering Student</p>
+    <button class="btn btn-light mt-3">Aspiring AI Developer</button>
+  </div>
+</section>
+
+<!-- 🔹 ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          I am a Computer Science Engineering student with strong interest in
+          Artificial Intelligence, Web Development, and problem solving.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          I enjoy building beginner-friendly projects, completing internships,
+          and continuously improving my technical skills.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 SKILLS -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Skills</h2>
+
+    <div class="row text-center g-4">
+      <div class="col-md-3 col-6">
+        <div class="card p-3">Python</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card p-3">C</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card p-3">HTML & CSS</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card p-3">SQL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="internship" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Internships</h2>
+
+    <div id="internCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-center">
+          <img src="intern1.jpeg" class="d-block mx-auto img-fluid rounded" style="max-height:350px;">
+          <h5 class="mt-3">Web Development Internship</h5>
+          <p>Astro Web Solution</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="intern2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-height:350px;">
+          <h5 class="mt-3">Python Internship</h5>
+          <p>Femtosoft Technologies</p>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#internCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#internCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="certification" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Certifications</h2>
+
+    <div id="certCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-center">
+          <img src="cert1.jpeg" class="d-block mx-auto img-fluid rounded" style="max-height:350px;">
+          <p class="mt-2">Certification 1</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="cert2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-height:350px;">
+          <p class="mt-2">Certification 2</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="cert3.jpeg" class="d-block mx-auto img-fluid rounded" style="max-height:350px;">
+          <p class="mt-2">Certification 3</p>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🔹 CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Contact</h2>
+
+    <table class="table table-bordered text-center">
+      <tr>
+        <th>Email</th>
+        <td><a href="mailto:monika492k5@gmail.com">monika492k5@gmail.com</a></td>
+      </tr>
+      <tr>
+        <th>Phone</th>
+        <td><a href="tel:+918438538530">+91 8438538530</a></td>
+      </tr>
+      <tr>
+        <th>GitHub</th>
+        <td><a href="https://github.com/monika4925" target="_blank">github.com/monika4925</a></td>
+      </tr>
+      <tr>
+        <th>LinkedIn</th>
+        <td><a href="www.linkedin.com/in/monika-b-169969354" target="_blank">linkedin.com/in/your-linkedin-profile</a></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+<!-- 🔹 FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  © 2026 Monika B | Portfolio
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
